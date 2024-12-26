@@ -526,19 +526,9 @@ h5 a {
     #end-video {
 
         width: 300px;
-        height: 450px;
-        position: relative;
-        bottom: 100px;
+        height: 200px;
     }
 
-    h5 {
-
-        text-align: center;
-        position: relative;
-        bottom: 100px;
-        font-size: larger;
-    }
-    
     h5 a {
     
         color: white;
@@ -548,8 +538,8 @@ h5 a {
     #sm-front-end {
 
         display:inline;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
         
 
     }
@@ -559,7 +549,5 @@ h5 a {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
-        bottom: 120px;
     }
 }    
