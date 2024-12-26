@@ -1,0 +1,565 @@
+/*css reset*/
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*scroll animation*/
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+/*css root*/
+:root {
+
+    --background-color:#1E201E;
+    --text-color:white;
+    --hover:#697565;
+}
+
+/*body*/
+body {
+
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* Navigation*/
+
+#nav-main {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.5em;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    z-index: 1;
+}
+
+#nav-ul {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#nav-heading-h1 {
+
+    font-size: 1.5rem;
+}
+
+#heading-a {
+
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-a {
+
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+.nav-a:hover {
+
+    background-color:var(--text-color);
+    color: var(--background-color);
+    border-radius: 2px;
+    transition: 0.4s all linear;
+}
+
+
+/*hero section*/
+#wrapper-home {
+
+    background-image: url(images/pexels-cottonbro-6686442\ \(1\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    z-index: 0;
+}
+
+#wrapper-home {
+
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#hero-heading {
+
+    font-size: 4rem;
+}
+
+#hero-p {
+
+    font-size: 1.5rem;
+}
+
+#hero-btn {
+
+    padding-inline: 1.5em;
+    padding-block: 1em;
+    background-color: black;
+    border: none;
+}
+
+#hero-a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color:black;
+    padding-inline: 1.4em;
+    padding-block: 0.8em;
+    font-family: Arial, sans-serif;
+    border: 3px solid black;
+}
+
+#hero-a:hover {
+
+    color: black;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: white;
+    transition: 0.3s all cubic-bezier(0.39, 0.575, 0.565, 1);
+    
+}
+
+/*about-us*/
+#about-us {
+
+    padding-top: 2.5em;
+}
+
+#about-us-heading {
+
+    text-align: center;
+    font-size: 2rem;
+}
+
+#container-about-us {
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    margin-inline: 3em;
+}
+
+/*download-area*/
+
+
+#download-area-heading {
+
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#song1-img {
+
+    width: 150px;
+    height: 150px;
+}
+
+#song1-div {
+
+    display: flex;
+    gap: 30px;
+    margin-inline: 3em;
+    align-items: center;
+}
+
+#download-song1,#yt-song1 {
+
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+}
+
+#yt-song1:hover {
+
+    color: white;
+    text-decoration: none;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    background-color: red;
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+
+#download-song1:hover {
+
+    color: white;
+    text-decoration: none;
+    padding-inline: 1em;
+    padding-block: 0.8em;
+    background-color: red;
+    display: inline-block;
+    transition: all 0.3s linear;
+}
+
+#song1-title {
+
+    margin-bottom: 0.5em;
+}
+
+#song1-des {
+
+    margin-bottom: 0.5em;
+}
+
+/*contact-us*/
+#contact-us-heading {
+
+    padding-top: 2.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#contact-us-main {
+
+    display: flex;
+    gap: 30px;
+    margin-inline: 3em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+label {
+
+    font-size: 1.3rem;
+}
+
+input {
+
+    width: 350px;
+    height: 30px;
+}
+
+#message-input {
+
+    height: 200px;
+}
+
+#submit-btn {
+
+    padding-inline: 1.5em;
+    padding-block: 0.2em;
+    font-size: 1.3rem;
+    cursor: pointer;
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+}
+
+#submit-btn:hover {
+
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+#end-video {
+
+    width: 600px;
+    height: 450px;
+}
+
+/*footer*/
+h5 {
+
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h5 a {
+
+    color: white;
+    text-decoration: none;
+}
+
+/* display none*/
+
+#sm-front-end {
+
+    display: none;
+}
+
+/*media query for mobile*/
+
+@media(max-width:375px){
+
+    #nav-main {
+
+        display: flex;
+        flex-direction: column;
+        padding: 0.5;
+          
+    }
+
+    #nav-heading-h1 {
+
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0.5em;
+    }
+
+    .nav-a {
+
+        text-align: center;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #wrapper-home {
+
+        background-image: url(images/pexels-cottonbro-6700144.jpg); 
+    }
+
+    #hero-heading {
+
+        font-size: 3rem;
+    }
+    
+    #hero-p {
+    
+        font-size: 1rem;
+        font-style: italic;
+    }
+    
+    #hero-btn {
+    
+        padding-inline: 1.5em;
+        padding-block: 1em;
+        background-color: rgb(255, 255, 255);
+        border: none;
+    }
+    
+    #hero-a {
+    
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        background-color:rgb(255, 255, 255);
+        padding-inline: 1.4em;
+        padding-block: 0.8em;
+        font-family: Arial, sans-serif;
+        border: 3px solid black;
+        font-weight: bold;
+    }
+
+    #wrapper-home {
+
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+
+    #about-us {
+
+        /* position: relative;
+        bottom: 400px; */
+    }
+    
+    #about-us-heading {
+    
+        text-align: center;
+        font-size: 2rem;
+        position: relative;
+        top: 20px;
+    }
+    
+    #container-about-us {
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        justify-content: center;
+        margin-inline: 3em;
+    }
+
+    #img-about-us {
+
+        width: 300px;
+        height: 300px;
+    }
+    #about-us-details {
+
+        text-align: center;
+    }
+
+    #download-area-heading {
+
+        /* position: relative;
+        bottom: 40px; */
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #song1-img {
+    
+        width: 150px;
+        height: 150px;
+    }
+    
+    #song1-div {
+    
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-inline: 3em;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    
+    #download-song1,#yt-song1 {
+    
+        color: rgb(255, 0, 0);
+        text-decoration: none;
+        padding-inline: 1em;
+        padding-block: 0.8em;
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #yt-song1:hover {
+    
+        color: white;
+        text-decoration: none;
+        padding-inline: 1em;
+        padding-block: 0.8em;
+        background-color: red;
+        display: inline-block;
+        transition: all 0.3s linear;
+    }
+    
+    #download-song1:hover {
+    
+        color: white;
+        text-decoration: none;
+        padding-inline: 1em;
+        padding-block: 0.8em;
+        background-color: red;
+        display: inline-block;
+        transition: all 0.3s linear;
+    }
+
+    #yt-song1 {
+
+        margin-top: 0.5em;
+    }
+    
+    #song1-title {
+    
+        margin-bottom: 0.5em;
+    }
+    
+    #song1-des {
+    
+        margin-bottom: 0.5em;
+    }
+
+
+    label {
+
+        font-size: 1rem;
+    }
+    
+    input {
+    
+        width: 300px;
+        height: 30px;
+    }
+    
+    #message-input {
+    
+        height: 200px;
+    }
+    
+    #submit-btn {
+    
+        padding-inline: 1.5em;
+        padding-block: 0.2em;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color: white;
+        border: 3px solid white;
+        color: black;
+    }
+
+
+    #contact-us-main {
+
+        display: flex;
+        flex-direction: column;
+        margin-inline: 1.5em;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #end-video {
+
+        width: 300px;
+        height: 450px;
+        position: relative;
+        bottom: 100px;
+    }
+
+    h5 {
+
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+        font-size: larger;
+    }
+    
+    h5 a {
+    
+        color: white;
+        text-decoration: none;
+    }
+
+    #sm-front-end {
+
+        display:inline;
+        width: 200px;
+        height: 200px;
+        
+
+    }
+
+    #sm-front-end-div {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        bottom: 120px;
+    }
+}    
