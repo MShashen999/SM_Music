@@ -259,6 +259,7 @@ input {
 #message-input {
 
     height: 200px;
+    width: 100%;
 }
 
 #submit-btn {
@@ -499,6 +500,7 @@ h5 a {
     #message-input {
     
         height: 200px;
+        width: 100%;
     }
     
     #submit-btn {
